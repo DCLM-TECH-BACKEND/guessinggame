@@ -3,8 +3,10 @@ from dataclasses import dataclass
 
 @dataclass
 class Player:
+    player_id: int
     username: str
     ranking: int = 0
+    games_won: int = 0
 
 
 def create_player():
@@ -13,4 +15,5 @@ def create_player():
     print(f"Player has been created: {player.username}")
 
 
-create_player()
+if __name__ == "__main__":
+    create_player()
